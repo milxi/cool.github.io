@@ -1,0 +1,44 @@
+body{
+    width: 100%;
+    margin: auto;
+}
+
+/*This was for the text to be this size at all times and also in the middle of the site.*/
+.container{
+    width: 660px;
+    margin: 0 auto;
+}
+
+/*By doing this, we get the header fully to the top and to cover the whole width of the site.*/
+.header{
+   background: #fcc9b9;
+   width: 100%;
+   top: 0;
+   position: fixed;
+}
+
+.logo{
+    float:left;
+    font-family: helvetica;
+    font-size: 45;
+}
+
+/* This code below takes all underscores off*/
+
+a{
+    text-decoration: none;
+    color:#322825;
+}
+
+/*This takes the dots away from the list. Also makes the list horizontal and adds space.*/
+li{
+    list-style: none;
+    float: left;
+    margin-left: 8px;
+
+}
+
+.nav{
+    float: right;
+
+}
