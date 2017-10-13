@@ -1,12 +1,24 @@
 body{
     width: 100%;
     margin: auto;
+    font-family: 'aw-conqueror-carved-one',sans-serif;
+    background-color: #fef9f8;
 }
 
 /*This was for the text to be this size at all times and also in the middle of the site.*/
+.header-container{
+    width: 660px;
+    margin: 0 auto;
+}
+
 .container{
     width: 660px;
     margin: 0 auto;
+    background-color: white;
+}
+
+.content{
+    text-align: justify;
 }
 
 /*By doing this, we get the header fully to the top and to cover the whole width of the site.*/
@@ -17,17 +29,26 @@ body{
    position: fixed;
 }
 
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+  margin-left: 180px;
+}
+
 .logo{
     float:left;
-    font-family: helvetica;
+    font-family: 'aw-conqueror-carved-one',sans-serif;
     font-size: 45;
 }
 
-/* This code below takes all underscores off*/
+/* This code below takes all underscores off and changes the font.*/
 
 a{
     text-decoration: none;
-    color:#322825;
+    color: white;
+    font-family: 'aw-conqueror-carved-one',sans-serif;
 }
 
 /*This takes the dots away from the list. Also makes the list horizontal and adds space.*/
@@ -35,10 +56,61 @@ li{
     list-style: none;
     float: left;
     margin-left: 8px;
-
+    padding-top: 22px;
 }
 
 .nav{
     float: right;
+}
+
+.content{
+    margin-top: 120px;
+}
+
+/*tables*/
+table, th, td {
+    border: 1px solid black;
+}
+
+.square{
+    width: 20%;
+    margin-right: 10%;
+    background-color: white;
+    float: left;
+}
+
+.square{
+    
+}
+
+#bl{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*All this is footer shit to make it the right size and to fix the img*/
+#footer{
+    float:left;
+    background: #fcc9b9;
+    width: 100%;
+    min-height: 190px;
+}
+
+#contact{
+    float:left;
+    width: 260px;
+    margin-left: 40%;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'aw-conqueror-carved-one',sans-serif;
+}
+
+#contact img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
 
 }
+
+
