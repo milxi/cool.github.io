@@ -67,21 +67,22 @@ li{
     margin-top: 120px;
 }
 
-/*tables*/
-table, th, td {
-    border: 1px solid black;
-}
+/*photos*/
+
 
 .square{
-    width: 20%;
-    margin-right: 10%;
+    width: 30%;
+    margin-right: 3%;
     background-color: white;
     float: left;
+
 }
 
-.square{
-    
+.square img{
+    width:100%;
+
 }
+
 
 #bl{
     display: flex;
@@ -111,6 +112,132 @@ table, th, td {
     height: 60px;
     padding: 10px;
 
+}
+
+/*PAGE 2*/
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+div.flip-3d {
+  perspective: 1200px;
+  width: 45%;
+  display: inline-block;
+  margin: 0;
+}
+
+div.flip-3d figure {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s transform;
+  font-size: 1.6rem;
+}
+
+div.flip-3d figure img {
+  width: 100%;
+  height: auto;
+}
+
+div.flip-3d figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: rotateY(.5turn) translateZ(1px);
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding-top: 45%;
+  opacity: 0.6;
+  transition: 1s .5s opacity;
+}
+
+div.flip-3d:hover figure {
+  transform: rotateY(.5turn);
+}
+
+div.flip-3d:hover figure figcaption {
+  opacity: 1;
+}
+
+div.flip-3d figure:after {
+  content: " ";
+  display: block;
+  height: 8vw;
+  width: 100%;
+  transform: rotateX(90deg);
+  background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media screen and (max-width: 800px) {
+  div#columns {
+    perspective-origin: center top;
+  }
+  div#columns figure {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 12vw;
+  }
+  div#columns figure:last-child {
+    display: none;
+  }
+}
+
+/*pinterest flow right here*/
+
+
+
+#pix {
+    column-width: 320px;
+    column-gap: 15px;
+    max-width: 50%;
+    margin: 50px auto;
+}
+
+div#pix figure {
+    background: #fefefe;
+    border: 2px solid #fcfcfc;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0 2px 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    transition: opacity 1
+  display: inline-block;
+  pix-break-inside: avoid;
+}
+
+div#pix figure img {
+    width: 100%; height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+
+div#pix small { 
+  font-size: 1rem;
+  float: right; 
+  text-transform: uppercase;
+  color: #aaa;
+} 
+
+div#pix small a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+
+
+
+@media screen and (max-width: 750px) { 
+  #pix { column-gap: 0px; }
+  #pix figure { max-width: 50%; }
 }
 
 
